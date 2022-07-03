@@ -1,5 +1,5 @@
 import './style.scss'
-import gsap from '../gsap'
+import { gsap } from '../gsap'
 
 // 设置默认值
 export const createHeroTimeline = () =>
