@@ -1,3 +1,38 @@
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 52px;
+  min-width: 1024px;
+  color: #1d1d1f;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+  &.sticking {
+    background-color: rgba(255, 255, 255, 0.72);
+  }
+
+  .content {
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+    }
+  }
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

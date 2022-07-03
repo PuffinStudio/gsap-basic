@@ -1,6 +1,10 @@
 #intro {
   background-color: #f1f1f1;
   padding: 16px;
+  height: 100vh;
+  video {
+    width: 100%;
+  }
   .button {
     opacity: 0;
   }
