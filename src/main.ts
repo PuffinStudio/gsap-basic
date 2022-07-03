@@ -1,3 +1,5 @@
+import './style.scss'
+
 import { createHeroTimeline } from './hero'
 import { createCatTimeline } from './cat'
 // run timeline
