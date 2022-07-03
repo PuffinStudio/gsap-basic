@@ -1,0 +1,36 @@
+<section class="description panel blue">
+  <div>
+    <h1>Basic Pin</h1>
+    <p>
+      You can <strong>pin</strong> an element while the ScrollTrigger is active
+      which basically make it stick in place while the scroll position is
+      between the <code>start</code> and <code>end</code> elements/values
+    </p>
+    <div class="scroll-down">
+      Scroll down
+      <div class="arrow"></div>
+    </div>
+  </div>
+</section>
+
+<section id="orange" class="panel orange">
+  <p id="orange-content">
+    <code>start: "top top"</code> triggers when the orange element's
+    <strong>top edge</strong> hits the <strong>top</strong> of the viewport.
+    <code>end:&nbsp;"bottom&nbsp;150px"</code> stops pinning when the
+    <strong>bottom</strong> of the orange element hits
+    <strong>150px</strong> down from the top of the viewport (measurements are
+    relative to the top).
+  </p>
+</section>
+
+<section id="red" class="panel red align-top">
+  <p id="red-content">
+    <code>start: "top center"</code> pins this element when the
+    <strong>top</strong> of the red element hits the <strong>center</strong> of
+    the viewport, and remains pinned for 200px because its <code>end</code> is
+    defined as <code>"+=200"</code>
+  </p>
+</section>
+
+<section class="panel purple">Easy Peasy!</section>
