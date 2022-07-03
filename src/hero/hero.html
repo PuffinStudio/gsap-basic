@@ -1,0 +1,19 @@
+<div id="intro" class="space">
+  <h3>Learning GSAP</h3>
+  <p class="desc">
+    Creating ScrollTriggers out of order If you have any ScrollTriggers that pin
+    elements (with the default pinSpacing: true) then the order in which the
+    ScrollTriggers are created is important. This is because any ScrollTriggers
+    after the ScrollTrigger with pinning need to compensate for the extra
+    distance that the pinning adds. You can see an example of how this sort of
+    thing might happen in the pen below. Notice that the third box's animation
+    runs before it's actually in the viewport.
+  </p>
+  <p class="desc">
+    Notice that we want the animation to start mid-screen, but when scrolling
+    backwards we want it to reset at a completely different place (when the
+    element goes offscreen). The solution is to use two ScrollTriggers - one for
+    the playing and one for the resetting once the element is off screen.
+  </p>
+  <p class="button">现在开始</p>
+</div>
