@@ -10,6 +10,7 @@ export const createHeroTimeline = () =>
         ease: 'elastic',
       },
     })
+    .from('#app', { ease: 'back', autoAlpha: 0 })
     .to('#intro h3', {
       opacity: 1,
       scale: 1.4,

@@ -1,3 +1,7 @@
+#app {
+  visibility: hidden;
+}
+
 .wrapper {
   width: 1024px;
   margin: 0 auto;
@@ -30,17 +34,5 @@
     ul {
       display: flex;
     }
-  }
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  .space {
-    margin-top: 10%;
   }
 }

@@ -7,23 +7,25 @@
     <title>iPhone 13</title>
   </head>
   <body>
-    <nav id="nav" class="sticking">
-      <div class="wrapper">
-        <div class="content">
-          <div class="title"><a href="/">iPhone 13</a></div>
-          <div class="menu">
-            <ul>
-              <li><span>概览</span></li>
-              <li><span>换成 iPhone</span></li>
-              <li><span>技术规格</span></li>
-            </ul>
-            <a href="/buy">购买</a>
+    <div id="app">
+      <nav id="nav" class="sticking">
+        <div class="wrapper">
+          <div class="content">
+            <div class="title"><a href="/">iPhone 13</a></div>
+            <div class="menu">
+              <ul>
+                <li><span>概览</span></li>
+                <li><span>换成 iPhone</span></li>
+                <li><span>技术规格</span></li>
+              </ul>
+              <a href="/buy">购买</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <main>{{> hero/hero }}</main>
-    <div id="app">{{> vinda/index }}{{> cat/cat }}</div>
+      </nav>
+      <main>{{> hero/hero }}</main>
+      {{> vinda/index }}{{> cat/cat }}
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
