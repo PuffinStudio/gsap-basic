@@ -415,6 +415,11 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
+lazysizes@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.2.tgz#27f974c26f5fcc33e7db765c0f4930488c8a2984"
+  integrity sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==
+
 lottie-web@^5.9.6:
   version "5.9.6"
   resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.6.tgz#62ae68563355d3e04aa75d53dec3dd4bea0e57c9"

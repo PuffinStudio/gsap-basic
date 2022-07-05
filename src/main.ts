@@ -1,5 +1,5 @@
 import './style.scss'
-
+import 'lazysizes'
 import { createHeroTimeline } from './hero'
 import { createCatTimeline } from './cat'
 import { createVindaTimeline } from './vinda'

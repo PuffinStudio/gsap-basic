@@ -1,20 +1,28 @@
 import './style.scss'
+import camera from './camera_large_2x.json?url'
+import durability from './durability_large_2x.json?url'
+import chip from './chip_large_2x.json?url'
+import battery from './battery_large_2x.json?url'
 import { gsap, lottie } from '../gsap'
 
-// 设置默认值
+const jsonList: any = {
+  camera,
+  durability,
+  chip,
+  battery,
+}
 export const createHeroTimeline = () => {
   const heroGroup = document.getElementById('heroGroup')
   const intros = heroGroup!.querySelectorAll('.intro-copy')
   intros.forEach((ele) => {
     const icon = ele.querySelector('.icon')
-    const pathName = icon!.getAttribute('data-lottie')
-    let timeObj = { currentFrame: 0 }
+    const name = icon!.getAttribute('data-lottie') || 'camera'
     let anim = lottie.loadAnimation({
       container: icon as any,
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: `src/hero/${pathName}_large_2x.json`,
+      path: jsonList[name],
     })
     gsap
       .timeline({
