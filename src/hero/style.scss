@@ -1,11 +1,16 @@
-#intro {
-  background-color: #f1f1f1;
-  padding: 16px;
-  height: 100vh;
-  video {
-    width: 100%;
-  }
-  .button {
-    opacity: 0;
+.hero {
+  .intro {
+    background-color: #f5f5f7;
+    padding-top: calc(var(--nav-height) + 154px);
+    height: 100vh;
+    .video {
+      width: 100%;
+      display: none;
+    }
+    .static {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

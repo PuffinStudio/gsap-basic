@@ -1,20 +1,239 @@
-<div id="intro" class="space">
-  <video autoplay src="src/hero/large_2x.mp4"></video>
-  <h3>Learning GSAP</h3>
-  <p class="desc">
-    Creating ScrollTriggers out of order If you have any ScrollTriggers that pin
-    elements (with the default pinSpacing: true) then the order in which the
-    ScrollTriggers are created is important. This is because any ScrollTriggers
-    after the ScrollTrigger with pinning need to compensate for the extra
-    distance that the pinning adds. You can see an example of how this sort of
-    thing might happen in the pen below. Notice that the third box's animation
-    runs before it's actually in the viewport.
-  </p>
-  <p class="desc">
-    Notice that we want the animation to start mid-screen, but when scrolling
-    backwards we want it to reset at a completely different place (when the
-    element goes offscreen). The solution is to use two ScrollTriggers - one for
-    the playing and one for the resetting once the element is off screen.
-  </p>
-  <p class="button">现在开始</p>
-</div>
+<section id="hero" class="section hero">
+  <div id="intro" class="intro">
+    <video class="video" autoplay src="src/hero/static_large_2x.mp4"></video>
+    <picture class="static">
+      <source
+        srcset="src/hero/static_small.jpeg, src/hero/static_small_2x.jpeg 2x"
+        media="(max-width:734px)" />
+      <source
+        srcset="src/hero/static_medium.jpeg, src/hero/static_medium_2x.jpeg 2x"
+        media="(max-width:1068px)" />
+      <source
+        srcset="src/hero/static_large.jpeg, src/hero/static_large_2x.jpeg 2x"
+        media="(min-width:0px)" />
+      <img src="src/hero/static_large.jpeg" alt="" />
+    </picture>
+  </div>
+  <div class="group">
+    <div class="wrapper">
+      <div class="intro-group">
+        <div class="intro-copy intro-copy-1" data-festo-item>
+          <div class="manifesto-icon-wrapper">
+            <div class="lottie-container lottie-container-camera">
+              <div
+                class="lottie-container-wrapper lottie-animation-1"
+                data-lottie-file="/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/hero-glyphs/camera_"></div>
+            </div>
+            <picture
+              id="overview-hero-icon-camera-1"
+              class="overview-hero-icon-camera camera-icon manifesto-icon"
+              data-lazy>
+              <source
+                data-empty
+                srcset="
+                  data:image/gif;base64,R0lGODlhAQABAHAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+                "
+                media="(min-width:0px)" />
+              <img
+                src="/v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_large.png"
+                onload="__lp(event)"
+                alt="相机图标" />
+            </picture>
+            <noscript>
+              <picture
+                class="overview-hero-icon-camera camera-icon manifesto-icon">
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_small.png,
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_small_2x.png 2x
+                  "
+                  media="(max-width:734px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_medium.png,
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_medium_2x.png 2x
+                  "
+                  media="(max-width:1068px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_large.png,
+                    /v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_large_2x.png 2x
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="/v/iphone-13/g/images/overview/hero/icon_camera__k18dtigdlq6i_large.png"
+                  alt="相机图标" />
+              </picture>
+            </noscript>
+          </div>
+          <p class="typography-site-headline-elevated">
+            超先进双摄系统<span class="headline-center-l">，</span
+            ><br />精进再精进<span class="headline-center-l">。</span>
+          </p>
+        </div>
+        <div class="intro-copy intro-copy-2" data-festo-item>
+          <div class="manifesto-icon-wrapper">
+            <div class="lottie-container lottie-container-durability">
+              <div
+                class="lottie-container-wrapper lottie-animation-2"
+                data-lottie-file="/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/hero-glyphs/durability_"></div>
+            </div>
+            <picture
+              id="overview-hero-icon-durability-1"
+              class="overview-hero-icon-durability durability-icon manifesto-icon"
+              data-lazy>
+              <source
+                data-empty
+                srcset="
+                  data:image/gif;base64,R0lGODlhAQABAHAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+                "
+                media="(min-width:0px)" />
+              <img
+                src="/v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_large.png"
+                onload="__lp(event)"
+                alt="耐用性图标" />
+            </picture>
+            <noscript>
+              <picture
+                class="overview-hero-icon-durability durability-icon manifesto-icon">
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_small.png,
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_small_2x.png 2x
+                  "
+                  media="(max-width:734px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_medium.png,
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_medium_2x.png 2x
+                  "
+                  media="(max-width:1068px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_large.png,
+                    /v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_large_2x.png 2x
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="/v/iphone-13/g/images/overview/hero/icon_durability__c3pipmyt204m_large.png"
+                  alt="耐用性图标" />
+              </picture>
+            </noscript>
+          </div>
+          <p class="typography-site-headline-elevated">
+            超强耐用性<span class="headline-center-l">，</span
+            ><br />边边角角面面俱到<span class="headline-center-l">。</span>
+          </p>
+        </div>
+        <div class="intro-copy intro-copy-3" data-festo-item>
+          <div class="manifesto-icon-wrapper">
+            <div class="lottie-container lottie-container-chip">
+              <div
+                class="lottie-container-wrapper lottie-animation-3"
+                data-lottie-file="/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/hero-glyphs/chip_"></div>
+            </div>
+            <picture
+              id="overview-hero-icon-chip-1"
+              class="overview-hero-icon-chip chip-icon manifesto-icon"
+              data-lazy>
+              <source
+                data-empty
+                srcset="
+                  data:image/gif;base64,R0lGODlhAQABAHAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+                "
+                media="(min-width:0px)" />
+              <img
+                src="/v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_large.png"
+                onload="__lp(event)"
+                alt="芯片图标" />
+            </picture>
+            <noscript>
+              <picture class="overview-hero-icon-chip chip-icon manifesto-icon">
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_small.png,
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_small_2x.png 2x
+                  "
+                  media="(max-width:734px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_medium.png,
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_medium_2x.png 2x
+                  "
+                  media="(max-width:1068px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_large.png,
+                    /v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_large_2x.png 2x
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="/v/iphone-13/g/images/overview/hero/icon_chip__d1cr45p6tqs2_large.png"
+                  alt="芯片图标" />
+              </picture>
+            </noscript>
+          </div>
+          <p class="typography-site-headline-elevated">
+            超高速芯片<span class="headline-center-l">，</span
+            ><br />事事来得畅快<span class="headline-center-l">。</span>
+          </p>
+        </div>
+        <div class="intro-copy intro-copy-4" data-festo-item>
+          <div class="manifesto-icon-wrapper">
+            <div class="lottie-container lottie-container-battery">
+              <div
+                class="lottie-container-wrapper lottie-animation-4"
+                data-lottie-file="/105/media/us/iphone-13/2021/19e0ebb3-0e17-4765-95af-c82bc827e02f/anim/hero-glyphs/battery_"></div>
+            </div>
+            <picture
+              id="overview-hero-icon-battery-1"
+              class="overview-hero-icon-battery battery-icon manifesto-icon"
+              data-lazy>
+              <source
+                data-empty
+                srcset="
+                  data:image/gif;base64,R0lGODlhAQABAHAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+                "
+                media="(min-width:0px)" />
+              <img
+                src="/v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_large.png"
+                onload="__lp(event)"
+                alt="电池图标" />
+            </picture>
+            <noscript>
+              <picture
+                class="overview-hero-icon-battery battery-icon manifesto-icon">
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_small.png,
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_small_2x.png 2x
+                  "
+                  media="(max-width:734px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_medium.png,
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_medium_2x.png 2x
+                  "
+                  media="(max-width:1068px)" />
+                <source
+                  srcset="
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_large.png,
+                    /v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_large_2x.png 2x
+                  "
+                  media="(min-width:0px)" />
+                <img
+                  src="/v/iphone-13/g/images/overview/hero/icon_battery__e4haplawmfcm_large.png"
+                  alt="电池图标" />
+              </picture>
+            </noscript>
+          </div>
+          <p class="typography-site-headline-elevated">
+            超劲续航大提升<span class="headline-center-l">，</span
+            ><br />每天一路挺你<span class="headline-center-l">。</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lower"></div>
+</section>

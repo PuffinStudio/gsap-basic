@@ -1,5 +1,5 @@
-#app {
-  visibility: hidden;
+:root {
+  --nav-height: 52px;
 }
 
 .wrapper {
@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 52px;
+  height: var(--nav-height);
   min-width: 1024px;
   color: #1d1d1f;
   background-color: #fff;
