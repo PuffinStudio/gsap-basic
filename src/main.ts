@@ -5,9 +5,9 @@ import { createCatTimeline } from './cat'
 import { createVindaTimeline } from './vinda'
 
 // https://zh.javascript.info/onload-ondomcontentloaded
-document.addEventListener('load', function () {
+window.addEventListener('load', function () {
   // run timeline
-  const htl = createHeroTimeline()
+  createHeroTimeline()
 
   const ctl = createCatTimeline()
 

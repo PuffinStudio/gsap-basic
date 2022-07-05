@@ -15,7 +15,6 @@ export const createVindaTimeline = () => {
       start: 'center center',
       scrub: true,
       pin: true,
-      markers: true,
     },
   })
   tl.fromTo(
