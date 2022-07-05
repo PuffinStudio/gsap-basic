@@ -21,21 +21,17 @@ export const createHeroTimeline = () => {
         scrollTrigger: {
           trigger: ele,
           start: 'top 80%',
-          end: 'bottom 40%',
+          end: 'bottom 15%',
           markers: true,
           scrub: true,
-          toggleActions: 'play restart play reverse',
           onUpdate: (self) => {
-            gsap.to(timeObj, {
-              currentFrame: Math.floor(self.progress * (anim.totalFrames - 1)),
-              onUpdate: () => {
-                anim.goToAndStop(timeObj.currentFrame, true)
-              },
-              ease: 'expo',
-            })
+            const total = anim.totalFrames - 1
+            const progress = self.progress * 3 * total
+            anim.goToAndStop(progress > total ? total : progress, true)
           },
         },
       })
-      .from(ele, { opacity: 0 })
+      .from(ele, { opacity: 0, duration: 2 })
+      .to(ele, { opacity: 0, duration: 1 })
   })
 }
