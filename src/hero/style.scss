@@ -22,7 +22,7 @@
   }
   .group {
     position: relative;
-    background-color: #12213a;
+    background-color: #12203a;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     .wrapper {
@@ -51,6 +51,7 @@
     margin-top: calc(-16vh - 457px);
     overflow: hidden;
     position: relative;
+    background-color: #12203a;
     .media {
       width: 200%;
       position: relative;
@@ -63,8 +64,9 @@
       background-image: url('./lower_xlarge_2x.jpeg');
     }
     .copy {
-      background-color: #12213a;
-      padding-bottom: 363px;
+      top: -120px;
+      position: relative;
+      padding-bottom: 50px;
       .content {
         position: relative;
         z-index: 7;

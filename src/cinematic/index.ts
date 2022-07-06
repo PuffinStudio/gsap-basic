@@ -77,9 +77,11 @@ export const createCinematicTimeline = () => {
         if (cinematicVideo !== null && cinematicControl !== null) {
           if (self.isActive) {
             cinematicControl.textContent = 'Play'
+            cinematicControl.style.display = 'block'
             cinematicVideo.play()
             videoPlaying = true
           } else {
+            cinematicControl.style.display = 'none'
             videoPlaying = false
             cinematicVideo.pause()
           }
