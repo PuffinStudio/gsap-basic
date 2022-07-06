@@ -3,6 +3,7 @@ import 'lazysizes'
 import { createHeroTimeline } from './hero'
 import { createCatTimeline } from './cat'
 import { createVindaTimeline } from './vinda'
+import './colors'
 
 // https://zh.javascript.info/onload-ondomcontentloaded
 window.addEventListener('load', function () {
