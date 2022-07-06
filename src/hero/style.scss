@@ -4,9 +4,13 @@
   .intro {
     background-color: #f5f5f7;
     position: sticky;
+    margin-bottom: var(--nav-height);
     top: 1px;
     height: 100vh;
     .video {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
       width: 100%;
     }
     .static {

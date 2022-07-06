@@ -2,7 +2,7 @@ import './style.scss'
 import 'lazysizes'
 import { createHeroTimeline } from './hero'
 import { createCatTimeline } from './cat'
-import { createVindaTimeline } from './vinda'
+import { createVindaTimeline } from './cinematic'
 import './colors'
 
 // https://zh.javascript.info/onload-ondomcontentloaded

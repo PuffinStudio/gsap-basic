@@ -46,14 +46,18 @@ export const createHeroTimeline = () => {
   const h1 = lowerContent!.querySelector('h1')
   const h2 = lowerContent!.querySelector('h2')
   const info = lowerContent!.querySelector('.info')
-  gsap
-    .timeline({
+  const list = [h1, h2, info]
+  list.forEach((ele) => {
+    gsap.from(ele, {
       scrollTrigger: {
-        trigger: lowerContent,
+        trigger: ele,
+        toggleActions: 'play none none reverse',
+        start: 'top 85%',
+        end: 'bottom 15%',
       },
-    })
-    .from(h1, {
       opacity: 0,
       y: 100,
+      duration: 0.5,
     })
+  })
 }
