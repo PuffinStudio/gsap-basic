@@ -30,7 +30,6 @@ export const createHeroTimeline = () => {
           trigger: ele,
           start: 'top 80%',
           end: 'bottom 15%',
-          markers: true,
           scrub: true,
           onUpdate: (self) => {
             const total = anim.totalFrames - 1
@@ -42,4 +41,19 @@ export const createHeroTimeline = () => {
       .from(ele, { opacity: 0, duration: 2 })
       .to(ele, { opacity: 0, duration: 1 })
   })
+  const heroLower = document.getElementById('heroLower')
+  const lowerContent = heroLower!.querySelector('.content')
+  const h1 = lowerContent!.querySelector('h1')
+  const h2 = lowerContent!.querySelector('h2')
+  const info = lowerContent!.querySelector('.info')
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: lowerContent,
+      },
+    })
+    .from(h1, {
+      opacity: 0,
+      y: 100,
+    })
 }
