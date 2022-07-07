@@ -107,8 +107,6 @@
     z-index: 1;
     width: 980px;
     height: 1590px;
-    margin-top: 144px;
-    margin-bottom: 144px;
 
     .item {
       background-color: #fff;
@@ -122,6 +120,7 @@
       top: 0;
       left: 0;
       right: 0;
+      padding: 144px 0;
 
       .box {
         border-radius: 25px;
