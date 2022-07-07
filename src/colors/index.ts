@@ -66,5 +66,5 @@ colorsItems.forEach((item) => {
     .from(info2, { y: 100, opacity: 0, duration: 1.5 })
     .from(info3, { y: 150, opacity: 0, duration: 2 }, '+=0.5')
     .from(info4, { y: 100, opacity: 0, duration: 1.5 }, '-=0.5')
-    .from(info5, { y: 100, opacity: 0, duration: 1.5 })
+    .from(info5, { y: 100, opacity: 0, duration: 1.5, delay: 2 }, '>')
 })
