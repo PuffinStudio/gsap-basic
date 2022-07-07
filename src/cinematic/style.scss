@@ -33,6 +33,9 @@
     }
   }
   .frame {
+    .frame-view {
+      background: url('./screen_large.png');
+    }
     .inline-video {
       position: relative;
       width: 100%;
@@ -79,6 +82,13 @@
         line-height: 1.2105263158;
         font-weight: 600;
         letter-spacing: 0.012em;
+        position: relative;
+        p {
+          position: absolute;
+        }
+        .second {
+          opacity: 0;
+        }
       }
     }
   }

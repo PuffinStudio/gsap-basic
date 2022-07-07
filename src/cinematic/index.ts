@@ -48,6 +48,8 @@ export const createCinematicTimeline = () => {
     )
   let videoPlaying = false
   const frameSticky = cinematic!.querySelector('.frame-sticky')
+  const firstIntro = frameSticky!.querySelector('.first')
+  const secondIntro = frameSticky!.querySelector('.second')
   const cinematicVideo = document.getElementById(
     'cinematicVideo',
   ) as HTMLVideoElement | null
@@ -66,27 +68,54 @@ export const createCinematicTimeline = () => {
       videoPlaying = !videoPlaying
     })
   }
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: frameSticky,
-      start: 'top 10%',
-      scrub: true,
-      pin: true,
-      markers: true,
-      onToggle: (self) => {
-        if (cinematicVideo !== null && cinematicControl !== null) {
-          if (self.isActive) {
-            cinematicControl.textContent = 'Play'
-            cinematicControl.style.display = 'block'
-            cinematicVideo.play()
-            videoPlaying = true
-          } else {
-            cinematicControl.style.display = 'none'
-            videoPlaying = false
-            cinematicVideo.pause()
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: frameSticky,
+        start: 'top 10%',
+        scrub: true,
+        pin: true,
+        markers: true,
+        onToggle: (self) => {
+          if (cinematicVideo !== null && cinematicControl !== null) {
+            if (self.isActive) {
+              cinematicControl.textContent = 'Play'
+              cinematicControl.style.display = 'block'
+              cinematicVideo.play()
+              videoPlaying = true
+            } else {
+              cinematicControl.style.display = 'none'
+              videoPlaying = false
+              cinematicVideo.pause()
+            }
           }
-        }
+        },
       },
-    },
-  })
+    })
+    .to(
+      firstIntro,
+      {
+        opacity: 0,
+        y: -30,
+        ease: 'expo.out',
+      },
+      0.1,
+    )
+    .fromTo(
+      secondIntro,
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+      },
+      '<75%',
+    )
+    .to(frameBottom, {
+      opacity: 0,
+      y: -30,
+      ease: 'expo.out',
+    })
 }
