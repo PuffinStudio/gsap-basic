@@ -58,7 +58,7 @@ colorsItems.forEach((item) => {
         trigger: colorsContainer,
         start: 'top 80%',
         end: 'bottom 60%',
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     })
@@ -66,5 +66,5 @@ colorsItems.forEach((item) => {
     .from(info2, { y: 100, opacity: 0 }, '-=0.3')
     .from(info3, { y: 100, opacity: 0 }, '-=0.2')
     .from(info4, { y: 100, opacity: 0 }, '-=0.4')
-    .from(info5, { y: 100, opacity: 0 })
+    .from(info5, { y: 100, opacity: 0, delay: 0.9 })
 })

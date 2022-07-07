@@ -50,6 +50,8 @@ export const createCinematicTimeline = () => {
   const frameSticky = cinematic!.querySelector('.frame-sticky')
   const firstIntro = frameSticky!.querySelector('.first')
   const secondIntro = frameSticky!.querySelector('.second')
+  const frameDevice = frameSticky!.querySelector('.frame-device')
+  const frameDeviceBg = frameDevice!.querySelector('.bg')
   const cinematicVideo = document.getElementById(
     'cinematicVideo',
   ) as HTMLVideoElement | null
@@ -75,7 +77,7 @@ export const createCinematicTimeline = () => {
         start: 'top 10%',
         scrub: true,
         pin: true,
-        markers: true,
+        // markers: true,
         onToggle: (self) => {
           if (cinematicVideo !== null && cinematicControl !== null) {
             if (self.isActive) {
@@ -117,5 +119,19 @@ export const createCinematicTimeline = () => {
       opacity: 0,
       y: -30,
       ease: 'expo.out',
+    })
+    .from(frameDeviceBg, {
+      opacity: 0,
+      backgroundColor: '#fff',
+    })
+    .from(
+      frameDevice,
+      {
+        opacity: 0,
+      },
+      0,
+    )
+    .from(frameDevice, {
+      transform: 'matrix(2.2, 0, 0, 2.2, 0, 120)',
     })
 }

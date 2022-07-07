@@ -33,12 +33,33 @@
     }
   }
   .frame {
+    .frame-device {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: var(--content-width);
+      margin: 0 auto;
+      picture {
+        width: 100%;
+      }
+      .bg {
+        position: absolute;
+        height: calc(100% - 50px);
+        width: calc(100% - 44px);
+        left: 24px;
+        top: 25px;
+        z-index: -1;
+        background-color: #000;
+        border-radius: 50px;
+      }
+    }
     .frame-view {
-      background: url('./screen_large.png');
+      // background: url('./screen_large.png');
     }
     .inline-video {
       position: relative;
-      width: 100%;
+      width: var(--content-width);
+      margin: 0 auto;
       button {
         position: absolute;
         z-index: 2;

@@ -52,6 +52,7 @@ ul {
   height: var(--nav-height);
   min-width: 1024px;
   color: #1d1d1f;
+  backdrop-filter: saturate(180%) blur(20px);
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.16);
   &.sticking {
