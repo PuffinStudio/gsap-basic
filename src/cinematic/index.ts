@@ -52,6 +52,8 @@ export const createCinematicTimeline = () => {
   const secondIntro = frameSticky!.querySelector('.second')
   const frameDevice = frameSticky!.querySelector('.frame-device')
   const frameDeviceBg = frameDevice!.querySelector('.bg')
+  const frameDeviceImg = frameDevice!.querySelector('picture')
+  const frameInlineVideo = frameSticky!.querySelector('.inline-video')
   const cinematicVideo = document.getElementById(
     'cinematicVideo',
   ) as HTMLVideoElement | null
@@ -70,6 +72,7 @@ export const createCinematicTimeline = () => {
       videoPlaying = !videoPlaying
     })
   }
+  frameDeviceImg!.style.opacity = '0'
   gsap
     .timeline({
       scrollTrigger: {
@@ -121,17 +124,19 @@ export const createCinematicTimeline = () => {
       ease: 'expo.out',
     })
     .from(frameDeviceBg, {
-      opacity: 0,
       backgroundColor: '#fff',
+      onComplete: () => {
+        frameDeviceImg!.style.opacity = '1'
+      },
+    })
+    .to(frameInlineVideo, {
+      scale: 0.6,
     })
     .from(
       frameDevice,
       {
-        opacity: 0,
+        transform: 'matrix(2.7, 0, 0, 2.7, 0, 250)',
       },
       0,
     )
-    .from(frameDevice, {
-      transform: 'matrix(2.2, 0, 0, 2.2, 0, 120)',
-    })
 }
