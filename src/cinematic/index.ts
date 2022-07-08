@@ -124,19 +124,23 @@ export const createCinematicTimeline = () => {
       ease: 'expo.out',
     })
     .from(frameDeviceBg, {
+      zIndex: 1,
       backgroundColor: '#fff',
       onComplete: () => {
         frameDeviceImg!.style.opacity = '1'
       },
+      onReverseComplete: () => {
+        frameDeviceImg!.style.opacity = '0'
+      },
     })
-    .to(frameInlineVideo, {
-      scale: 0.6,
+    .from(frameDevice, {
+      transform: 'matrix(2.7, 0, 0, 2.7, 0, 250)',
     })
     .from(
-      frameDevice,
+      frameInlineVideo,
       {
-        transform: 'matrix(2.7, 0, 0, 2.7, 0, 250)',
+        width: 980,
       },
-      0,
+      '<',
     )
 }
