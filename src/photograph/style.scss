@@ -1,0 +1,167 @@
+#photograph {
+  background-color: #2e2e3a;
+  overflow: hidden;
+
+  .highlight {
+    color: #72e5ce;
+  }
+
+  .photograph-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    color: #fff;
+
+    h3 {
+      font-size: 100px;
+      line-height: 1;
+      font-weight: 500;
+      margin-top: 50px;
+    }
+
+    .tips {
+      align-self: flex-end;
+      position: relative;
+      margin-right: 30px;
+      margin-top: 100px;
+      font-size: 40px;
+      line-height: 1.1;
+      transform: translateY(50px);
+
+      img {
+        width: 54px;
+        height: 69px;
+        position: absolute;
+        right: -12px;
+        top: 42px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+
+    .padding-container {
+      padding-bottom: 125px;
+    }
+
+    .padding-container-s {
+      padding-bottom: 80px;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-start {
+      @extend .flex;
+      align-items: flex-start;
+    }
+
+    .flex-half {
+      flex-basis: 50%;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    .pic1 {
+      width: 1441px;
+      height: 1081px;
+      position: relative;
+      left: 50%;
+      margin-left: -720.5px;
+    }
+
+    .pic2 {
+      width: 588px;
+      height: 783px;
+      position: relative;
+      left: -91px;
+    }
+
+    .pic2-text {
+      width: 345px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.015em;
+      margin-left: 85px;
+    }
+
+    .pic3 {
+      width: 1260px;
+      height: 945px;
+      position: relative;
+      left: 50%;
+      margin-left: -630px;
+    }
+
+    .pic4 {
+      position: relative;
+      left: -33px;
+    }
+
+    .pic4-text {
+      width: 360px;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-top: 80px;
+      margin-left: 100px;
+    }
+
+    .pic5 {
+      position: relative;
+      right: -36px;
+      margin-top: 520px;
+    }
+
+    .pic6 {
+      width: 1260px;
+      height: 945px;
+      position: relative;
+      left: 50%;
+      margin-left: -630px;
+    }
+
+    .pic7 {
+      width: 708px;
+      height: 932px;
+      position: relative;
+      left: 50%;
+      margin-left: -354px;
+    }
+
+    .pic8 {
+      width: 988px;
+      height: 741px;
+      position: relative;
+      left: 50%;
+      margin-left: -494px;
+    }
+
+    .single-text {
+      width: 350px;
+      line-height: 1.5;
+    }
+
+    .memories-mode {
+      position: relative;
+      margin-top: 125px;
+    }
+  }
+}
