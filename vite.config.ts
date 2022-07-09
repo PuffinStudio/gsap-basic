@@ -4,6 +4,7 @@ import minify from 'vite-plugin-minify'
 import legacy from '@vitejs/plugin-legacy'
 
 export default {
+  base: '/gsap-basic/',
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
