@@ -60,7 +60,7 @@ export const createPhotographTimeline = () => {
         trigger: '.memories-mode',
         start: '-150',
         // end: 'bottom 90%',
-        markers: true,
+        // markers: true,
         scrub: 1,
         pin: true,
         pinSpacing: true,
