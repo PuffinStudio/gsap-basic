@@ -51,7 +51,7 @@
           &::after {
             border-radius: inherit;
             box-shadow: inset 0 1px 1px rgb(0 0 0 / 10%);
-            content: "";
+            content: '';
             display: block;
             height: inherit;
             position: absolute;
@@ -113,7 +113,7 @@
       display: grid;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
-      grid-template-areas: "finish shield shield" "sizes sizes edge" "water water edge";
+      grid-template-areas: 'finish shield shield' 'sizes sizes edge' 'water water edge';
       grid-template-columns: 425px 1fr 341px;
       grid-template-rows: auto auto 234px;
       position: absolute;
@@ -171,8 +171,10 @@
           height: 45px;
           background-size: 40px 45px;
           background-repeat: no-repeat;
-          background-image: url('./images/icon2.png');
           margin-bottom: 32px;
+          &.lazyloaded {
+            background-image: url('./images/icon2.png');
+          }
         }
 
         .bg2 {
@@ -287,31 +289,31 @@
           color: #1d1d1f;
         }
 
-        .icon {
+        .icon.lazyloaded {
           background-image: url('./images/icon.png');
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/green_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/green_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/green_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/green_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/green_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/green_6.jpg');
         }
       }
@@ -325,27 +327,27 @@
           color: #fec2eb;
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/pink_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/pink_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/pink_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/pink_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/pink_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/pink_6.jpg');
         }
       }
@@ -359,27 +361,27 @@
           color: #b6ff9b;
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/blue_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/blue_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/blue_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/blue_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/blue_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/blue_6.jpg');
         }
       }
@@ -393,27 +395,27 @@
           color: #ffa9ab;
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/black_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/black_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/black_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/black_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/black_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/black_6.jpg');
         }
       }
@@ -427,27 +429,27 @@
           color: #72e5ce;
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/white_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/white_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/white_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/white_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/white_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/white_6.jpg');
         }
       }
@@ -461,27 +463,27 @@
           color: #ffb44c;
         }
 
-        .bg1 {
+        .bg1.lazyloaded {
           background-image: url('./images/red_1.jpg');
         }
 
-        .bg2 {
+        .bg2.lazyloaded {
           background-image: url('./images/red_2.jpg');
         }
 
-        .bg3 {
+        .bg3.lazyloaded {
           background-image: url('./images/red_3.jpg');
         }
 
-        .bg4 {
+        .bg4.lazyloaded {
           background-image: url('./images/red_4.jpg');
         }
 
-        .bg5 {
+        .bg5.lazyloaded {
           background-image: url('./images/red_5.jpg');
         }
 
-        .bg6 {
+        .bg6.lazyloaded {
           background-image: url('./images/red_6.jpg');
         }
       }
