@@ -61,7 +61,9 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url('./lower_xlarge_2x.jpeg');
+      &.lazyloaded {
+        background-image: url('./lower_xlarge_2x.jpeg');
+      }
     }
     .copy {
       top: -120px;

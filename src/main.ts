@@ -1,7 +1,7 @@
 import './style.scss'
 import 'lazysizes'
+import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
 import { createHeroTimeline } from './hero'
-import { createCatTimeline } from './cat'
 import { createCinematicTimeline } from './cinematic'
 import './colors'
 import { createPhotographTimeline } from './photograph'

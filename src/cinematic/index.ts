@@ -83,7 +83,6 @@ export const createCinematicTimeline = () => {
           start: 'top 10%',
           scrub: true,
           pin: true,
-          markers: true,
           onToggle: (self) => {
             if (video && control) {
               if (self.isActive) {

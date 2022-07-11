@@ -31,7 +31,7 @@
           <picture>
             <img
               class="lazyload"
-              src="src/cinematic/screen_large.png"
+              data-src="src/cinematic/screen_large.png"
               alt="screen" />
           </picture>
         </div>
@@ -41,7 +41,8 @@
               id="cinematicVideo"
               muted="true"
               playsinline="true"
-              class="video"
+              class="video lazyload"
+              preload="none"
               src="src/cinematic/large_2x.mp4"></video>
             <button id="cinematicControl">Play</button>
           </div>

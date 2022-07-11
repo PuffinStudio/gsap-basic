@@ -5,7 +5,7 @@
       muted="true"
       class="video"
       src="src/hero/video_large_2x.mp4"></video>
-    <picture class="static">
+    <!-- <picture class="static">
       <source
         srcset="src/hero/static_small.jpeg, src/hero/static_small_2x.jpeg 2x"
         media="(max-width:734px)" />
@@ -15,8 +15,8 @@
       <source
         srcset="src/hero/static_large.jpeg, src/hero/static_large_2x.jpeg 2x"
         media="(min-width:0px)" />
-      <img class="lazyload" data-src="src/hero/static_large.jpeg" alt="" />
-    </picture>
+      <img data-src="src/hero/static_large.jpeg" alt="" />
+    </picture> -->
   </div>
   <div id="heroGroup" class="group">
     <div class="wrapper">
@@ -53,7 +53,7 @@
     </div>
   </div>
   <div id="heroLower" class="lower">
-    <div class="media"></div>
+    <div class="media lazyload"></div>
     <div class="copy">
       <div class="wrapper">
         <div class="content">
