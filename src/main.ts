@@ -29,19 +29,19 @@ window.addEventListener('load', async function () {
   createCinematicTimeline()
   createPhotographTimeline()
 
-  const params = handleParams({
-    method: 'jd.union.open.goods.jingfen.query',
-    '360buy_param_json': JSON.stringify({
-      goodsReq: {
-        eliteId: 22,
-      },
-    }),
-  })
-  console.log(params)
-  const res = await client.get('/api/routerjson', {
-    params,
-  })
-  console.log(res)
+  // const params = handleParams({
+  //   method: 'jd.union.open.goods.jingfen.query',
+  //   '360buy_param_json': JSON.stringify({
+  //     goodsReq: {
+  //       eliteId: 22,
+  //     },
+  //   }),
+  // })
+  // console.log(params)
+  // const res = await client.get('/api/routerjson', {
+  //   params,
+  // })
+  // console.log(res)
 })
 
 function handleParams(ps: any) {
