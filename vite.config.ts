@@ -2,8 +2,9 @@ import handlebars from 'vite-plugin-handlebars'
 import { resolve } from 'path'
 import minify from 'vite-plugin-minify'
 import legacy from '@vitejs/plugin-legacy'
+import { defineConfig } from 'vite'
 
-export default {
+export default defineConfig({
   base: '/gsap-basic/',
   plugins: [
     legacy({
@@ -18,4 +19,13 @@ export default {
     }),
     minify({}),
   ],
-}
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://api.jd.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
+})
