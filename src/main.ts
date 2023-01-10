@@ -28,6 +28,7 @@ window.addEventListener('load', async function () {
   createHeroTimeline()
   createCinematicTimeline()
   createPhotographTimeline()
+  meituan()
 
   // const params = handleParams({
   //   method: 'jd.union.open.goods.jingfen.query',
@@ -43,6 +44,29 @@ window.addEventListener('load', async function () {
   // })
   // console.log(res)
 })
+
+async function meituan() {
+  const key = '0d160b5de0925e6ac3e104bda3624449'
+  const params: { [key: string]: any } = {
+    actId: 33,
+    appkey: '8240d9d03bf0f05f5a25bb1613bce35d',
+    sid: 'meituanhongbao',
+    linkType: 4,
+  }
+  const keys = Object.keys(params).sort()
+  let sign = key
+  keys.forEach((k) => {
+    sign += k + params[k]
+  })
+  sign += key
+  const res = await client.get('/api/generateLink', {
+    params: {
+      ...params,
+      sign: md5(sign),
+    },
+  })
+  console.log('res', res)
+}
 
 function handleParams(ps: any) {
   const params = {
